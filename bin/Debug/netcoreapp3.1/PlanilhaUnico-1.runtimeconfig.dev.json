@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\yan.lima\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\yan.lima\\.nuget\\packages"
+    ]
+  }
+}

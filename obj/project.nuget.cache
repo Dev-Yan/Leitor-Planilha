@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZVGQfky+4eiuBO82Jq87Q5j9z50qxlwoUeBj519yhovtw1RNQ/WuUpZUhxKkqRNflI+g6QZ7FV7r2Q9u+y/oXQ==",
+  "success": true,
+  "projectFilePath": "C:\\Planilha-Unico1\\PlanilhaUnico-1\\PlanilhaUnico-1\\PlanilhaUnico-1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yan.lima\\.nuget\\packages\\google.apis\\1.51.0\\google.apis.1.51.0.nupkg.sha512",
+    "C:\\Users\\yan.lima\\.nuget\\packages\\google.apis.auth\\1.51.0\\google.apis.auth.1.51.0.nupkg.sha512",
+    "C:\\Users\\yan.lima\\.nuget\\packages\\google.apis.core\\1.51.0\\google.apis.core.1.51.0.nupkg.sha512",
+    "C:\\Users\\yan.lima\\.nuget\\packages\\google.apis.sheets.v4\\1.51.0.2315\\google.apis.sheets.v4.1.51.0.2315.nupkg.sha512",
+    "C:\\Users\\yan.lima\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
