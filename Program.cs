@@ -24,10 +24,10 @@ namespace PlanilhaUnico
 
             void Salvar(IList<object> dados)
             {
-                using (SqlConnection connection = new SqlConnection("Data Source=UNICO-P90F005;Initial Catalog=master;Integrated Security=True"))
+                using (SqlConnection connection = new SqlConnection("Nome do Servidor | datasource"))
                 {
                     {
-                        string sql = "INSERT INTO Lojas (MacroCanal) VALUES (@dados0)";
+                        string sql = "INSERT INTO Lojas (MacroCanal) VALUES (@dados0)"; 
                         using (SqlCommand cmd = new SqlCommand(sql, connection))
                         {
                             connection.Open();
@@ -66,7 +66,7 @@ namespace PlanilhaUnico
             });
 
             String spreadsheetId = "1QR7jwzYaa9EMzfrdSEUvA8geFrNWFvbBPIN7XPt00cQ";
-            String range = "Página1!A1:BE28";
+            String range = "Página1!A1:BE28";                                         // explicitando de onde queremos pegar as informações da planilha para salvar no banco.
             SpreadsheetsResource.ValuesResource.GetRequest request =
             service.Spreadsheets.Values.Get(spreadsheetId, range);
 
