@@ -27,11 +27,11 @@ namespace PlanilhaUnico
                 using (SqlConnection connection = new SqlConnection("Nome do Servidor | datasource"))
                 {
                     {
-                        string sql = "INSERT INTO Lojas (MacroCanal) VALUES (@dados0)"; 
+                        string sql = "INSERT INTO Tabela (colunas) VALUES (@)"; 
                         using (SqlCommand cmd = new SqlCommand(sql, connection))
                         {
                             connection.Open();
-                            cmd.Parameters.Add("@dados0", SqlDbType.VarChar, 255).Value = dados[0].ToString();
+                            cmd.Parameters.Add("@", SqlDbType.VarChar, 255).Value = dados[0].ToString();
                             cmd.CommandType = CommandType.Text;
                             cmd.ExecuteNonQuery();
                         }
@@ -46,7 +46,7 @@ namespace PlanilhaUnico
 
 
             using (var stream =
-                new FileStream("C:/Planilha-Unico1/PlanilhaUnico-1/PlanilhaUnico-1/client_secret_254177701680-1equ9tertind61egl7lv1dkoda0bj466.apps.googleusercontent.com.json", FileMode.Open, FileAccess.Read))
+                new FileStream("caminho da planilha", FileMode.Open, FileAccess.Read))
             {
 
                 string credPath = "token.json";
@@ -71,7 +71,7 @@ namespace PlanilhaUnico
             service.Spreadsheets.Values.Get(spreadsheetId, range);
 
 
-        https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
+        https:
             ValueRange response = request.Execute();
             IList<IList<Object>> values = response.Values;
 
