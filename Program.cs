@@ -24,7 +24,7 @@ namespace PlanilhaUnico
 
             void Salvar(IList<object> dados)
             {
-                using (SqlConnection connection = new SqlConnection("Nome do Servidor | datasource"))
+                using (SqlConnection connection = new SqlConnection("datasource"))
                 {
                     {
                         string sql = "INSERT INTO Tabela (colunas) VALUES (@)"; 
